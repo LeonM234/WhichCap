@@ -18,7 +18,7 @@ namespace WhichCap.Repository
 
         public void Add(Which E)
         {
-            throw new NotImplementedException();
+            _dbContext.Whiches.Add(E);
         }
 
         public void Delete(Which E)
@@ -28,17 +28,26 @@ namespace WhichCap.Repository
 
         public void Clear()
         {
-            throw new NotImplementedException();
+            var a = this.All();
+            _dbContext.Whiches.RemoveRange(a);
+            _dbContext.SaveChanges();
         }
 
         public IEnumerable<Which> All()
         {
-            throw new NotImplementedException();
+            var qu = from Which in _dbContext.Whiches select Which;
+            return qu.ToList<Which>();
         }
 
-        public Which GetById(int id)
+        // Passing in a string id here to make it work.  
+        // In the model, id (or ID in the models case) is an int.
+        // While the ApplicationUserID is a string.
+        public Which GetById(string id)
         {
-            throw new NotImplementedException();
+            var query = from Which in _dbContext.Whiches
+                        where Which.ApplicationUserID == id
+                        select Which;
+            return query.First<Which>();
         }
     }
 }
