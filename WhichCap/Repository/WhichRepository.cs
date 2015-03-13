@@ -9,7 +9,13 @@ namespace WhichCap.Repository
 {
     public class WhichRepository : IWhichRepository
     {
-        private WhichDBContext _dbContext;
+        private WhichContext _dbContext;
+
+        public WhichRepository()
+        {
+            _dbContext = new WhichContext();
+            _dbContext.Whiches.Load();
+        }
 
         public int GetCount()
         {

@@ -31,7 +31,7 @@ namespace WhichCap.Models
         public bool Done { get; set; }
     }
 
-    public class WhichDBContext : DbContext
+    public class WhichContext : DbContext
     {
         public DbSet<Which> Whiches { get; set; }
     }
