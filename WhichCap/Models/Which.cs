@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
 namespace WhichCap.Models
 {
-    public class WhichModels
+    public class Which
     {
         public int ID { get; set; }
 
@@ -26,5 +27,10 @@ namespace WhichCap.Models
         public int Vote2 { get; set; }
 
         public bool Done { get; set; }
+    }
+
+    public class WhichDBContext : DbContext
+    {
+        public DbSet<Which> Whiches { get; set; }
     }
 }
