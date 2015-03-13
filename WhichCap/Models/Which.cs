@@ -10,6 +10,8 @@ namespace WhichCap.Models
     {
         public int ID { get; set; }
 
+        public string ApplicationUserID { get; set; }
+
         // UserID here?
 
         // Need MaxChar (or something) of 150, and min of...1?

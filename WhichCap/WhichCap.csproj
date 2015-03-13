@@ -208,6 +208,8 @@
     <Compile Include="Models\Which.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="Repository\IWhichRepository.cs" />
+    <Compile Include="Repository\WhichRepository.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
