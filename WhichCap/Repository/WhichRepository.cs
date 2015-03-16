@@ -10,11 +10,11 @@ namespace WhichCap.Repository
 {
     public class WhichRepository : IWhichRepository
     {
-        WhichContext _db;
+        private WhichContext _db;
 
-        public WhichRepository()
+        public WhichRepository(string connection="WhichContext")
         {
-            _db = new WhichContext();
+            _db = new WhichContext(connection);
             _db.Whiches.Load();
         }
 
@@ -26,11 +26,13 @@ namespace WhichCap.Repository
         public void Add(Which E)
         {
             _db.Whiches.Add(E);
+            _db.SaveChanges();
         }
 
         public void Delete(Which E)
         {
-            throw new NotImplementedException();
+            _db.Whiches.Remove(E);
+            _db.SaveChanges();
         }
 
         public void Clear()
@@ -55,6 +57,11 @@ namespace WhichCap.Repository
                         where Which.ApplicationUserID == id
                         select Which;
             return query.First<Which>();
+        }
+
+        public void Dispose()
+        {
+            _db.Dispose();
         }
     }
 }

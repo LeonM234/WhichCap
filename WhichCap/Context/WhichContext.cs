@@ -9,6 +9,11 @@ namespace WhichCap.Context
 {
     public class WhichContext : DbContext
     {
-            public DbSet<Which> Whiches { get; set; }
+        public WhichContext(string connection="DefaultConnection") : base(connection)
+        {
+
+        }
+            
+        public DbSet<Which> Whiches { get; set; }
     }
 }
