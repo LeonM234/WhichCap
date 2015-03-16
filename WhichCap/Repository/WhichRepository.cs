@@ -3,28 +3,29 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using WhichCap.Context;
 using WhichCap.Models;
 
 namespace WhichCap.Repository
 {
     public class WhichRepository : IWhichRepository
     {
-        private WhichContext _dbContext;
+        WhichContext _db;
 
         public WhichRepository()
         {
-            _dbContext = new WhichContext();
-            _dbContext.Whiches.Load();
+            _db = new WhichContext();
+            _db.Whiches.Load();
         }
 
         public int GetCount()
         {
-            return _dbContext.Whiches.Count<Models.Which>();
+            return _db.Whiches.Count<Models.Which>();
         }
 
         public void Add(Which E)
         {
-            _dbContext.Whiches.Add(E);
+            _db.Whiches.Add(E);
         }
 
         public void Delete(Which E)
@@ -35,13 +36,13 @@ namespace WhichCap.Repository
         public void Clear()
         {
             var a = this.All();
-            _dbContext.Whiches.RemoveRange(a);
-            _dbContext.SaveChanges();
+            _db.Whiches.RemoveRange(a);
+            _db.SaveChanges();
         }
 
         public IEnumerable<Which> All()
         {
-            var qu = from Which in _dbContext.Whiches select Which;
+            var qu = from Which in _db.Whiches select Which;
             return qu.ToList<Which>();
         }
 
@@ -50,7 +51,7 @@ namespace WhichCap.Repository
         // While the ApplicationUserID is a string.
         public Which GetById(string id)
         {
-            var query = from Which in _dbContext.Whiches
+            var query = from Which in _db.Whiches
                         where Which.ApplicationUserID == id
                         select Which;
             return query.First<Which>();

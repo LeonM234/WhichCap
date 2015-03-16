@@ -7,11 +7,8 @@ using WhichCap.Models;
 
 namespace WhichCap.Context
 {
-    public class WhichContext
+    public class WhichContext : DbContext
     {
-        public class WhichContext : DbContext
-        {
             public DbSet<Which> Whiches { get; set; }
-        }
     }
 }
