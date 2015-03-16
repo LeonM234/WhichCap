@@ -1,8 +1,11 @@
-﻿using System;
+﻿﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Data.Entity;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace WhichCap.Models
 {
@@ -31,8 +34,18 @@ namespace WhichCap.Models
         public bool Done { get; set; }
     }
 
-    public class WhichContext : DbContext
-    {
-        public DbSet<Which> Whiches { get; set; }
-    }
+    //public Which()
+    //{
+
+    //}
+
+    //public Which(string Title, string Pic1Url, string Pic2Url, int Vote1, int Vote2, bool Done)
+    //{
+    //    this.Title = Title;
+    //    this.Pic1Url = Pic1Url;
+    //    this.Pic2Url = Pic2Url;
+    //    this.Vote1 = Vote1;
+    //    this.Vote2 = Vote2;
+    //    this.Done = Done;
+    //}
 }
