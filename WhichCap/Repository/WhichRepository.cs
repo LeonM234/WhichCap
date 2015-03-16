@@ -12,9 +12,9 @@ namespace WhichCap.Repository
     {
         private WhichContext _db;
 
-        public WhichRepository(string connection="WhichContext")
+        public WhichRepository()
         {
-            _db = new WhichContext(connection);
+            _db = new WhichContext();
             _db.Whiches.Load();
         }
 

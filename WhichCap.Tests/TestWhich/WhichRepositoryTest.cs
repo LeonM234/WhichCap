@@ -11,10 +11,10 @@ namespace WhichCap.Tests.TestWhich
         private static WhichRepository repo;
 
         [ClassInitialize]
-        public static void SetUp()
+        public static void SetUp(TestContext _context)
         {
-            repo = new WhichRepository("Name=WhichTest");
-
+            repo = new WhichRepository();
+            repo.Clear();
         }
 
         [TestCleanup]
