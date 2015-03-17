@@ -8,5 +8,5 @@
          });
          //$locationProvider.html5Mode(true);
      })
-    .controller('feedController', function ($http, $scope) {
+    .controller('feedController', function ($scope, $http) {
     });
