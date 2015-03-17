@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app="whichApp">
+<html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -22,8 +22,8 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                    <li><a href="/Feed">Which Feed</a></li>
-                    <li><a href="/Profile">Profile</a></li>
+                    <li><a href="/#/Feed">Which Feed</a></li>
+                    <li><a href="/#/Profile">Profile</a></li>
 
                 </ul>
             </div>
@@ -41,7 +41,7 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/Scripts/angular.js")
     @Scripts.Render("~/Scripts/angular-route.js")
-    @Scripts.Render("~/Scripts/app/FeedController.js")
+    @Scripts.Render("~/Scripts/Feed/feedController.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>
