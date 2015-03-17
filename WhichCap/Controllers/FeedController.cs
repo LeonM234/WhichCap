@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
-using System.Web.Mvc;
+using WhichCap.Models;
+using WhichCap.Repository;
 
 namespace WhichCap.Controllers
 {
     public class FeedController : ApiController
     {
-        //public CourseVm[] Get()
-        //{
-        //    return _registrationVmBuilder.GetCourseVms();
-        //}
+        private static WhichRepository _db = new WhichRepository();
+
+        // GET: api/feed
+        [Route("api/feed")]
+        public IEnumerable<Which> Get()
+        {
+            return _db.All();
+        }
     }
 }
