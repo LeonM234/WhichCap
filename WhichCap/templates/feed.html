@@ -1,2 +1,24 @@
-﻿<h2>TEH FEEDZ VIEW</h2>   
+﻿<section>
+    <h1>Which Feed</h1>
 
+    <div>
+        <table class="table table-condensed table-hover" ng-repeat="which in whiches">
+            <tr>
+                <th>Which {{which.title}}?</th>
+            </tr>
+            <tr>
+                <td>{{which.pic1url}}</td>
+            </tr>
+            <tr>
+                <td>{{which.vote1}}</td>
+            </tr>
+            <tr>
+                <td>{{which.pic2url}}</td>
+            </tr>
+            <tr>
+                <td>{{which.vote2}}</td>
+            </tr>
+        </table>
+    </div>
+
+</section>

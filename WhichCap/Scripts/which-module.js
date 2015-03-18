@@ -4,7 +4,7 @@
              templateUrl: "/templates/feed.html", controller: "feedController"
          });
          $routeProvider.when("/Profile", {
-             templateUrl: "/templates/profile.html", controller: "profileController"
+             templateUrl: "/templates/profile.html", controller: "feedController"
          });
          //$locationProvider.html5Mode(true);
      });
