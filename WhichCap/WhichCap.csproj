@@ -235,9 +235,7 @@
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\Feed\feed-repository.js" />
-    <Content Include="Scripts\Feed\feedController.js" />
-    <Content Include="Scripts\Profiles\profile-repository.js" />
-    <Content Include="Scripts\Profiles\profileController.js" />
+    <Content Include="Scripts\Feed\feed-controller.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -273,6 +271,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\which-module.js" />
     <Content Include="templates\feed.html" />
     <Content Include="templates\profile.html" />
     <Content Include="Web.config" />
