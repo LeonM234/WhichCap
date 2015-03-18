@@ -1,19 +1,19 @@
 ﻿<section>
     <h1>Which Feed</h1>
 
-    <div>
-        <table class="table table-condensed table-hover" ng-repeat="which in feeds">
+    <div ng-repeat="which in feeds">
+        <table class="table table-condensed table-hover">
             <tr>
                 <th>Which {{which.title}}?</th>
             </tr>
             <tr>
-                <td>{{which.pic1url}}</td>
+                <td>{{which.pic1Url}}</td>
             </tr>
             <tr>
                 <td>{{which.vote1}}</td>
             </tr>
             <tr>
-                <td>{{which.pic2url}}</td>
+                <td>{{which.pic2Url}}</td>
             </tr>
             <tr>
                 <td>{{which.vote2}}</td>
