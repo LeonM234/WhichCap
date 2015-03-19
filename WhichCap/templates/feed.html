@@ -1,7 +1,7 @@
 ﻿<section>
     <h1>Which Feed</h1>
 
-    <div ng-repeat="which in feeds">
+    <div ng-repeat="which in feeds | orderBy:'id':true">
         <table class="table table-condensed table-hover">
             <tr>
                 <th>Which {{which.title}}?</th>
