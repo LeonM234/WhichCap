@@ -6,5 +6,8 @@
          $routeProvider.when("/Profile", {
              templateUrl: "/templates/profile.html", controller: "feedController"
          });
+         $routeProvider.when("/AddWhich", {
+             templateUrl: "/templates/addwhich.html", controller: "feedController"
+         });
          $routeProvider.otherwise({ redirectTo: "/" });
      });
