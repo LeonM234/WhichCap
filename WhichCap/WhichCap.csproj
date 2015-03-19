@@ -234,6 +234,7 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\Feed\add-controller.js" />
     <Content Include="Scripts\Feed\feed-repository.js" />
     <Content Include="Scripts\Feed\feed-controller.js" />
     <Content Include="Scripts\bootstrap.js" />
