@@ -38,8 +38,9 @@ namespace WhichCap.Models
             // empty constructor
         }
 
-        public Which(string Title, string Pic1Url, string Pic2Url, int Vote1, int Vote2, bool Done)
+        public Which(string applicationUserID, string Title, string Pic1Url, string Pic2Url, int Vote1, int Vote2, bool Done)
         {
+            this.ApplicationUserID = ApplicationUserID;
             this.Title = Title;
             this.Pic1Url = Pic1Url;
             this.Pic2Url = Pic2Url;

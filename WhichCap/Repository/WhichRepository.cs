@@ -48,15 +48,12 @@ namespace WhichCap.Repository
             return qu.ToList<Which>();
         }
 
-        // Passing in a string id here to make it work.  
-        // In the model, id (or ID in the models case) is an int.
-        // While the ApplicationUserID is a string.
-        public Which GetById(string id)
+        public IEnumerable<Which> GetWhichesByUserId(string userId)
         {
-            var query = from Which in _db.Whiches
-                        where Which.ApplicationUserID == id
-                        select Which;
-            return query.First<Which>();
+            var WhichesById = from w in _db.Whiches
+                              where w.ApplicationUserID == userId
+                              select w;
+            return WhichesById.ToList();
         }
 
         public void Dispose()

@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WhichCap.Repository;
 using WhichCap.Models;
+using System.Collections.Generic;
 
 namespace WhichCap.Tests.TestWhich
 {
@@ -34,7 +35,16 @@ namespace WhichCap.Tests.TestWhich
         public void TestAddToDatabase()
         {
             Assert.AreEqual(0, repo.GetCount());
-            repo.Add(new Which("Shoes", "www.awesomepic.com", "www.stupidpic.com", 12, 200, false));
+            repo.Add(new Which("timmy", "Shoes", "www.awesomepic.com", "www.stupidpic.com", 12, 200, false));
+            Assert.AreEqual(1, repo.GetCount());
+        }
+
+        [TestMethod]
+        public void DBGetWhichByUserID()
+        {
+            Which testwhich = new Which("bcfac595-1a3f-44e9-b4cc-105de3c581bb", "Dog", "Dog1pic.com", "Dog2pic.com", 100, 246, false);
+            repo.Add(testwhich);
+            List<Which> which = repo.GetWhichesByUserId("bcfac595-1a3f-44e9-b4cc-105de3c581bb") as List<Which>;
             Assert.AreEqual(1, repo.GetCount());
         }
     }

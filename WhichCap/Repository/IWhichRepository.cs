@@ -13,6 +13,6 @@ namespace WhichCap.Repository
         void Delete(Which E);
         void Clear();
         IEnumerable<Which> All();
-        Which GetById(string id);
+        IEnumerable<Which> GetWhichesByUserId(string userId);
     }
 }
