@@ -22,6 +22,20 @@ namespace WhichCap.Controllers
             return _db.All();
         }
 
+        // GET: api/feed
+        [Route("api/feed")]
+        public IEnumerable<Which> GetById()
+        {
+            string userId = User.Identity.GetUserId();
+            if (userId != null)
+            {
+                return _db.GetWhichesByUserId(userId);
+            }
+            return _db.All();
+            // Not sure all is necessary
+            // Only need to get by ID for profile section
+        }
+
         // POST: api/feed
         [Route("api/feed/")]
         public HttpResponseMessage Post(Which which)
