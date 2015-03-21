@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Web.Http;
-using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
-using System.Net.Http.Formatting;
-using System.Net.Http.Headers;
 
 namespace WhichCap
 {
@@ -15,11 +11,10 @@ namespace WhichCap
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
-            jsonFormatter.SerializerSettings.ContractResolver =
-                new CamelCasePropertyNamesContractResolver();
+            var jsonFormatter = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
+            jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
-            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new System.Net.Http.Headers.MediaTypeHeaderValue("text/html"));
 
             // Web API routes
             config.MapHttpAttributeRoutes();
@@ -30,8 +25,7 @@ namespace WhichCap
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            //var jsonFormatter = GlobalConfiguration.Configuration.Formatters.JsonFormatter;
-            //jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
         }
     }
 }
