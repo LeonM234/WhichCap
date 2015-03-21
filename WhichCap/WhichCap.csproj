@@ -226,8 +226,7 @@
     <Content Include="Scripts\app\which-module.js" />
     <Content Include="templates\addwhich.html" />
     <Content Include="templates\feed.html" />
-    <Content Include="templates\login.html" />
-    <Content Include="templates\profile.html" />
+    <Content Include="templates\mywhiches.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

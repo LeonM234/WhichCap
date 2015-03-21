@@ -3,8 +3,8 @@
          $routeProvider.when("/Feed", {
              templateUrl: "/templates/feed.html", controller: "feedController"
          });
-         $routeProvider.when("/Profile", {
-             templateUrl: "/templates/profile.html", controller: "feedController"
+         $routeProvider.when("/MyWhiches", {
+             templateUrl: "/templates/mywhiches.html", controller: "feedController"
          });
          $routeProvider.when("/AddWhich", {
              templateUrl: "/templates/addwhich.html", controller: "addController"

@@ -5,6 +5,12 @@
             // query(), because that is what you
             // use if you want to return an array
         },
+
+        // may need to change the url 'api/feed/profile' to something else
+        // like 'api/profile/:id
+        getById: function () {
+            return $resource('/api/feed/profile').query();
+        },
         
         save: function (which) {
             return $resource('/api/feed').save(which);

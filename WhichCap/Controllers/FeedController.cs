@@ -22,7 +22,7 @@ namespace WhichCap.Controllers
             return _db.All();
         }
 
-        // GET: api/feed
+        // GET: api/feed/profile
         [Route("api/feed/profile")]
         public IEnumerable<Which> GetById()
         {
