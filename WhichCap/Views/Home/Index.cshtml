@@ -1,52 +1,8 @@
-﻿<!DOCTYPE html>
-<html ng-app="whichApp">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>WHICH</title>
-    <script src="../../Scripts/angular.js"></script>
-    <script src="../../Scripts/angular-route.js"></script>
-    <script src="../../Scripts/angular-resource.min.js"></script>
-    <script src="../../Scripts/which-module.js"></script>
-    <script src="../../Scripts/Feed/feed-repository.js"></script>
-    <script src="../../Scripts/Feed/feed-controller.js"></script>
-    <script src="../../Scripts/Feed/add-controller.js"></script>
-    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="jumbotron">
-        <h1>WHICH</h1>
-        <p class="lead">Which lets you vote on which Which you like more</p>
-    </div>
-    <div class="row">
-        <div class="col-md-4">
-            <h6>4+4 = {{4+4}}</h6>
-            <h6>2+2 = {{2+2}}</h6>
-        </div>
-    </div>
-    <div class="container">
-        <div ng-view></div>
-    </div>   
-    <footer>
-        <p>My ASP.NET MVC + Angular Application</p>
-    </footer>
-    <script src="../../Scripts/jquery-1.10.2.min.js"></script>
-    <script src="../../Scripts/bootstrap.min.js"></script>
-</body>
+﻿@{
+    ViewBag.Title = "Home";
+}
+<div class="container" ng-app="whichApp">
+    <div ng-view></div>
 
-</html>
+    <div>Angular test 3+3 = {{3+3}}</div>
+</div>   

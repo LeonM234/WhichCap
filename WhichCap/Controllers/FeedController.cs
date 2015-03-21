@@ -23,7 +23,7 @@ namespace WhichCap.Controllers
         }
 
         // GET: api/feed
-        [Route("api/feed")]
+        [Route("api/feed/profile")]
         public IEnumerable<Which> GetById()
         {
             string userId = User.Identity.GetUserId();
