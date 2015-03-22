@@ -7,9 +7,9 @@
         },
 
         // may need to change the url 'api/feed/profile' to something else
-        // like 'api/profile/:id
+        // like 'api/profile/:id OR 'api/profile/{id}'
         getById: function () {
-            return $resource('/api/feed/profile').query();
+            return $resource('/api/profile/{id}').query();
         },
         
         save: function (which) {

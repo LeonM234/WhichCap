@@ -4,7 +4,7 @@
              templateUrl: "/templates/feed.html", controller: "feedController"
          });
          $routeProvider.when("/MyWhiches", {
-             templateUrl: "/templates/mywhiches.html", controller: "feedController"
+             templateUrl: "/templates/mywhiches.html", controller: "mywhichController"
          });
          $routeProvider.when("/AddWhich", {
              templateUrl: "/templates/addwhich.html", controller: "addController"

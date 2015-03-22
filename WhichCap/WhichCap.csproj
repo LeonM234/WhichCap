@@ -206,6 +206,7 @@
     <Content Include="Scripts\app\add-controller.js" />
     <Content Include="Scripts\app\feed-repository.js" />
     <Content Include="Scripts\app\feed-controller.js" />
+    <Content Include="Scripts\app\mywhich-controller.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\angular.min.js.map" />
