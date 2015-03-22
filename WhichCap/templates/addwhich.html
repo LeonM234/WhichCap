@@ -1,9 +1,31 @@
 ﻿<div class="row">
     <div class="col-xs-12">
-        <h2>Add up to {{30+20}} Destinations!</h2>
+        <h2>ANGULAR TEST {{30+20}} WHICHES!</h2>
+        <h1>Something else should show up...</h1>
     </div>
 </div>
-<form name="newWhichForm" role="form" novalidate>
+<section class="content">
+    <h2>Hoshi</h2>
+    <span class="input input--hoshi">
+        <input class="input__field input__field--hoshi" type="text" id="input-4" ng-model="which.title" required />
+        <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+            <span class="input__label-content input__label-content--hoshi">Which<u>____</u>?</span>
+        </label>
+    </span>
+    <span class="input input--hoshi">
+        <input class="input__field input__field--hoshi" type="text" id="input-5" ng-model="which.pic1Url" required />
+        <label class="input__label input__label--hoshi input__label--hoshi-color-2" for="input-5">
+            <span class="input__label-content input__label-content--hoshi">Which #1 Pic</span>
+        </label>
+    </span>
+    <span class="input input--hoshi">
+        <input class="input__field input__field--hoshi" type="text" id="input-6" ng-model="which.pic2Url" required />
+        <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="input-6">
+            <span class="input__label-content input__label-content--hoshi">Which #2 Pic</span>
+        </label>
+    </span>
+</section>
+<!--<form name="newWhichForm" role="form" novalidate>
     <div class="row">
         <div class="col-md-3">
             <div class="form-group">
@@ -25,4 +47,4 @@
             <button class="btn btn-default" ng-click="save(which)">Create My Which!</button>
         </div>
     </div>
-</form>
+</form>-->
