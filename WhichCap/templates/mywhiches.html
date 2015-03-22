@@ -1,4 +1,20 @@
 ﻿<h2>My Whiches</h2>
-<h1>Testing</h1>
-<h3>Work Dammit</h3>
-<h4>Angular Math! 2+9 = {{2+9}}</h4>
+<div ng-repeat="which in feeds | orderBy:'id':true">
+    <table class="table table-condensed table-hover">
+        <tr>
+            <th>Which {{which.title}}?</th>
+        </tr>
+        <tr>
+            <td>{{which.pic1Url}}</td>
+        </tr>
+        <tr>
+            <td>{{which.vote1}}</td>
+        </tr>
+        <tr>
+            <td>{{which.pic2Url}}</td>
+        </tr>
+        <tr>
+            <td>{{which.vote2}}</td>
+        </tr>
+    </table>
+</div>
