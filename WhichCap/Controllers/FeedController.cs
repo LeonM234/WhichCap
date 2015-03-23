@@ -45,5 +45,14 @@ namespace WhichCap.Controllers
             _db.Add(which);
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
+
+        //// PUT: api/feed/{id}
+        //[Route("api/feed/{id}")]
+        //public HttpResponseMessage Put(Which which)
+        //{
+        //    which.ID = User.Identity.GetUserId();
+        //    _db.Add(which);
+        //    return new HttpResponseMessage(HttpStatusCode.OK);
+        //}
     }
 }

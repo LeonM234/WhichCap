@@ -1,4 +1,11 @@
-﻿body {
+﻿/* NAVBAR */
+
+.navbar {
+    background-color: #607D8B;
+}
+
+/* BODY */
+body {
     padding-top: 50px;
     padding-bottom: 20px;
     background-color: #fbf9f9;
@@ -14,42 +21,46 @@
 
 #navWhichFeed {
     font-family: 'Kaushan Script', cursive;
-    color: #fed136;
+    color: #03A9F4;
     font-size: 2em;
 }
 
 #navAddWhich, #navMyWhiches, #myWhichesH1 {
     font-family: 'Inconsolata', cursive;
-    color: #ef27ee;
+    color: #CDDC39;
     font-size: 1.5em;
 }
 
-/* WHICH FEED*/
+/* WHICH FEED & MY WHICHES*/
 #whichFeedh1 {
     font-family: 'Kaushan Script', cursive;
-    color: #fed136;
+    color: #03A9F4;
     font-size: 2em;
 }
 
 #feedUnderline {
     font-family: 'Inconsolata', cursive;
-    color: #ef27ee;
+    color: #37474f;
     font-size: 1.5em;
 }
 
 .whichFeedWhiches {
     font-family: 'Kaushan Script', cursive;
-    color: #fed136;
+    color: #03A9F4;
     font-size: 1.2em;
 }
 
 .whichFeedItems {
     font-family: 'Inconsolata', cursive;
-    color: #ef27ee;
+    color: #37474f;
     font-size: 1.2em;
 }
 
 #myWhichesH1, #whichFeedh1 {
+    margin-bottom: 50px;
+}
+
+.table {
     margin-bottom: 50px;
 }
 
