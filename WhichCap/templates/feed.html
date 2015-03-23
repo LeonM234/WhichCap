@@ -1,22 +1,22 @@
 ﻿<section>
-    <h1>Which Feed</h1>
+    <h1 class="col-xs-12 text-center" id="whichFeedh1">Which&nbsp; <u id="feedUnderline">&nbsp;Feed&nbsp;</u>?</h1>
 
     <div ng-repeat="which in feeds | orderBy:'id':true">
         <table class="table table-condensed table-hover">
-            <tr>
-                <th>Which {{which.title}}?</th>
+            <tr class="col-xs-8 text-center center-block">
+                <th class="text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;{{which.title}}&nbsp;</u>?</th>
             </tr>
-            <tr>
+            <tr class="col-xs-8 text-center center-block">
                 <td>{{which.pic1Url}}</td>
             </tr>
-            <tr>
-                <td>{{which.vote1}}</td>
+            <tr class="col-xs-8 text-center center-block">
+                <td class="text-center">{{which.vote1}}</td>
             </tr>
-            <tr>
+            <tr class="col-xs-8 text-center center-block">
                 <td>{{which.pic2Url}}</td>
             </tr>
-            <tr>
-                <td>{{which.vote2}}</td>
+            <tr class="col-xs-8 text-center center-block">
+                <td class="text-center">{{which.vote2}}</td>
             </tr>
         </table>
     </div>

@@ -1,21 +1,20 @@
-﻿<h2>My Whiches</h2>
-<h2>Should see something here too...</h2>
+﻿<h1 id="myWhichesH1" class="col-xs-12 text-center">My Whiches</h1>
 <div ng-repeat="which in feeds | orderBy:'id':true">
     <table class="table table-condensed table-hover">
-        <tr>
-            <th>Which {{which.title}}?</th>
+        <tr class="col-xs-8 text-center center-block">
+            <th class="text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;{{which.title}}&nbsp;</u>?</th>
         </tr>
-        <tr>
+        <tr class="col-xs-8 text-center center-block">
             <td>{{which.pic1Url}}</td>
         </tr>
-        <tr>
-            <td>{{which.vote1}}</td>
+        <tr class="col-xs-8 text-center center-block">
+            <td class="text-center">{{which.vote1}}</td>
         </tr>
-        <tr>
+        <tr class="col-xs-8 text-center center-block">
             <td>{{which.pic2Url}}</td>
         </tr>
-        <tr>
-            <td>{{which.vote2}}</td>
+        <tr class="col-xs-8 text-center center-block">
+            <td class="text-center">{{which.vote2}}</td>
         </tr>
     </table>
 </div>

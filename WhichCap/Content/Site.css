@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #fbf9f9;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -17,9 +18,39 @@
     font-size: 2em;
 }
 
-#navAddWhich, #navMyWhiches {
-    color: #49b437;
+#navAddWhich, #navMyWhiches, #myWhichesH1 {
+    font-family: 'Inconsolata', cursive;
+    color: #ef27ee;
     font-size: 1.5em;
+}
+
+/* WHICH FEED*/
+#whichFeedh1 {
+    font-family: 'Kaushan Script', cursive;
+    color: #fed136;
+    font-size: 2em;
+}
+
+#feedUnderline {
+    font-family: 'Inconsolata', cursive;
+    color: #ef27ee;
+    font-size: 1.5em;
+}
+
+.whichFeedWhiches {
+    font-family: 'Kaushan Script', cursive;
+    color: #fed136;
+    font-size: 1.2em;
+}
+
+.whichFeedItems {
+    font-family: 'Inconsolata', cursive;
+    color: #ef27ee;
+    font-size: 1.2em;
+}
+
+#myWhichesH1, #whichFeedh1 {
+    margin-bottom: 50px;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
