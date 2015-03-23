@@ -50,6 +50,35 @@ body {
     font-size: 1.2em;
 }
 
+/* Resize pics depending on screen size*/
+@media only screen and (min-width: 390px) {
+        .pics {
+        max-width: 170px;
+        min-width: 165px;
+        max-height: 117px;
+        min-height: 112px;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+        .pics {
+        max-width: 288px;
+        min-width: 278px;
+        max-height: 192px;
+        min-height: 182px;
+    }
+}
+
+@media only screen and (min-width: 1000px ) {
+    .pics {
+        max-width: 450px;
+        min-width: 440px;
+        max-height: 300px;
+        min-height: 290px;
+    }
+}
+
+
 .whichFeedItems {
     font-family: 'Inconsolata', cursive;
     color: #37474f;

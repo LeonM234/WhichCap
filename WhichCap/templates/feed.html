@@ -3,19 +3,15 @@
 
     <div ng-repeat="which in feeds | orderBy:'id':true">
         <table class="table table-condensed table-hover">
-            <tr class="col-xs-8 text-center center-block">
-                <th class="text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;{{which.title}}&nbsp;</u>?</th>
+            <tr class="col-xs-12 text-center center-block feedTopRow">
+                <th colspan="2" class=" text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;{{which.title}}&nbsp;</u>?</th>
             </tr>
             <tr class="col-xs-8 text-center center-block">
-                <td ng-click="voteForFirst(which)">{{which.pic1Url}}</td>
+                <td ng-click="voteForFirst(which)"><img class="pics" src="{{which.pic1Url}}" /></td>
+                <td ng-click="voteForSecond(which)"><img class="pics" src="{{which.pic2Url}}" /></td>
             </tr>
             <tr class="col-xs-8 text-center center-block">
                 <td class="text-center">{{which.vote1}}</td>
-            </tr>
-            <tr class="col-xs-8 text-center center-block">
-                <td ng-click="voteForSecond(which)">{{which.pic2Url}}</td>
-            </tr>
-            <tr class="col-xs-8 text-center center-block">
                 <td class="text-center">{{which.vote2}}</td>
             </tr>
         </table>

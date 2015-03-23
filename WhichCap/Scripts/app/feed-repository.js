@@ -20,15 +20,6 @@
             }, 2000);
         },
 
-        // return $resource('/api/feed/{which.id}').put(which);
-        // +++ Click whichpic1 or whichpic2
-        // +++ ng-click = (feedController function)
-        // +++ Runs function to feedController
-        // +++ Function should get the ID (available in the angular inspector)
-        // +++ Function should grab Vote1 if whichpic1 is selected, else, grab vote2
-        // --- add +1 to the value of the appropriate vote
-        // --- POST (or update??) the updated vote to the correct ID
-
         voteForFirst: function (which) {
             $resource('api/' + which.id + '/voteforfirst').save(which.id);
         },
