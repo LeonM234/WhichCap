@@ -60,5 +60,29 @@ namespace WhichCap.Repository
         {
             _db.Dispose();
         }
+
+        internal void AddFirstVote(int id)
+        {
+            var query = from Which in _db.Whiches
+                        where Which.ID == id
+                        select Which;
+
+            var which = query.First<Which>();
+
+            which.Vote1 += 1;
+            _db.SaveChanges();
+        }
+
+        internal void AddSecondVote(int id)
+        {
+            var query = from Which in _db.Whiches
+                        where Which.ID == id
+                        select Which;
+
+            var which = query.First<Which>();
+
+            which.Vote2 += 1;
+            _db.SaveChanges();
+        }
     }
 }

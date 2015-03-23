@@ -46,13 +46,22 @@ namespace WhichCap.Controllers
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
 
-        //// PUT: api/feed/{id}
-        //[Route("api/feed/{id}")]
-        //public HttpResponseMessage Put(Which which)
-        //{
-        //    which.ID = User.Identity.GetUserId();
-        //    _db.Add(which);
-        //    return new HttpResponseMessage(HttpStatusCode.OK);
-        //}
+        // PUT: api/{id}/voteforfirst
+        [Route("api/{id}/voteforfirst")]
+        [HttpPost]
+        public HttpResponseMessage PostVote1(int id)
+        {
+            _db.AddFirstVote(id);
+            return new HttpResponseMessage(HttpStatusCode.OK);
+        }
+
+        // PUT: api/{id}/voteforsecond
+        [Route("api/{id}/voteforsecond")]
+        [HttpPost]
+        public HttpResponseMessage PostVote2(int id)
+        {
+            _db.AddSecondVote(id);
+            return new HttpResponseMessage(HttpStatusCode.OK);
+        }
     }
 }
