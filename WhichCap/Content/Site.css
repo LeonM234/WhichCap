@@ -11,6 +11,17 @@
 
 .center-block {float: none !important}
 
+#navWhichFeed {
+    font-family: 'Kaushan Script', cursive;
+    color: #fed136;
+    font-size: 2em;
+}
+
+#navAddWhich, #navMyWhiches {
+    color: #49b437;
+    font-size: 1.5em;
+}
+
 /* Set width on the form input elements since they're 100% wide by default */
 /* CODROPS WILL USE THESE AS WELL - COMMENTING OUT FOR NOW*/
 /*input,

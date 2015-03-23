@@ -1,4 +1,4 @@
-﻿whichModule.factory('feedRepository', function ($resource) {
+﻿whichModule.factory('feedRepository', function ($resource, $location) {
     return {
         get: function () {
             return $resource('/api/feed').query();
@@ -6,14 +6,18 @@
             // use if you want to return an array
         },
 
-        // may need to change the url 'api/feed/profile' to something else
-        // like 'api/profile/:id OR 'api/profile/{id}'
         getById: function () {
             return $resource('/api/feed/{id}').query();
         },
         
         save: function (which) {
             return $resource('/api/feed').save(which);
+        },
+
+        waitASec: function () {
+            window.setTimeout(function () {
+                window.location.href = "/#/Feed";
+            }, 2000);
         }
     }
 })

@@ -4,9 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title Which ___?</title>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href="~/fonts/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/component.css" rel="stylesheet" />
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,9 +24,9 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
-                    <li><a href="/#/Feed">Which Feed</a></li>
-                    <li><a href="/#/AddWhich">Add a Which!</a></li>
-                    <li><a href="/#/MyWhiches">My Whiches</a></li>
+                    <li><a id="navWhichFeed" href="/#/Feed">Which___?</a></li>
+                    <li><a id="navAddWhich" href="/#/AddWhich">Add a Which!</a></li>
+                    <li><a id="navMyWhiches" href="/#/MyWhiches">My Whiches</a></li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
