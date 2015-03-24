@@ -1,10 +1,10 @@
 ﻿<section>
-    <h1 class="col-xs-12 text-center" id="whichFeedh1">Which&nbsp; <u id="feedUnderline">&nbsp;Feed&nbsp;</u>?</h1>
+    <h1 class="col-xs-12 text-center" id="whichFeedh1">Which&nbsp;<u id="feedUnderline">&nbsp;&nbsp;Feed&nbsp;&nbsp;</u>!</h1>
 
     <div ng-repeat="which in feeds | orderBy:'id':true">
         <table class="table table-condensed table-hover">
             <tr class="col-xs-12 text-center center-block feedTopRow">
-                <th colspan="2" class=" text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;{{which.title}}&nbsp;</u>?</th>
+                <th colspan="2" class=" text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;&nbsp;{{which.title}}&nbsp;&nbsp;</u>?</th>
             </tr>
             <tr class="col-xs-8 text-center center-block">
                 <td ng-click="voteForFirst(which)"><img class="pics" src="{{which.pic1Url}}" /></td>

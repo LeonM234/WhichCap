@@ -1,14 +1,14 @@
 ﻿/* NAVBAR */
 
 .navbar {
-    background-color: #607D8B;
+    background-color: #455A64;
 }
 
 /* BODY */
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #fbf9f9;
+    background-color: #CFD8DC;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -20,7 +20,7 @@ body {
 .center-block {float: none !important}
 
 #navWhichFeed {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Frijole', cursive;
     color: #03A9F4;
     font-size: 2em;
 }
@@ -33,7 +33,7 @@ body {
 
 /* WHICH FEED & MY WHICHES*/
 #whichFeedh1 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Frijole', cursive;
     color: #03A9F4;
     font-size: 2em;
 }
@@ -45,9 +45,19 @@ body {
 }
 
 .whichFeedWhiches {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Frijole', cursive;
     color: #03A9F4;
     font-size: 1.2em;
+}
+
+.pics {
+    border: 5px groove #03A9F4;
+}
+
+.votecount {
+    font-family: 'Kaushan Script', cursive;
+    color: #03A9F4;
+    font-size: 1.1em;
 }
 
 /* Resize pics depending on screen size*/
