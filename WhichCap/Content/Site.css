@@ -66,12 +66,12 @@ body {
     border-radius: 10%;
 }
 
-.votecount {
+.votecount1, .votecount2 {
     font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
     color: #03A9F4;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
-
 
 /* Resize pics depending on screen size*/
 @media only screen and (min-width: 300px) {
@@ -215,7 +215,7 @@ textarea {
 
 .input__field--hoshi {
 	margin-top: 1em;
-	padding: 2em 0.15em;
+	padding: 2.5em 0.15em 2em 0.15em;
 	width: 100%;
 	background: transparent;
 	color: #595F6E;
@@ -234,7 +234,7 @@ textarea {
 
 .input__label-content--hoshi {
 	position: absolute;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .input__label--hoshi::before,

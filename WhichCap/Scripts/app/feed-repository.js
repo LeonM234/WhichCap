@@ -35,7 +35,6 @@
             if (which.vote1 > which.vote2) {
                 $('.feedVote1').append("Currently Winning");
                 $('.feedVote2').append("Currently Losing");
-                console.log(this);
             }
             else if (which.vote1 < which.vote2) {
                 $('.feedVote1').append("Currently Losing");
