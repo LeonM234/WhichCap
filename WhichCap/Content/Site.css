@@ -66,6 +66,27 @@ body {
     border-radius: 10%;
 }
 
+.feedVote1w, .feedVote2w {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    color: #4cff00;
+    font-size: 1.3em;
+}
+
+.feedVote1l, .feedVote2l {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    color: hsl(20, 100%, 50%);
+    font-size: 1.3em;
+}
+
+.feedVote1t, .feedVote2t {
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 700;
+    color: #ffd800;
+    font-size: 1.3em;
+}
+
 .votecount1, .votecount2 {
     font-family: 'Kaushan Script', cursive;
     font-weight: 700;
