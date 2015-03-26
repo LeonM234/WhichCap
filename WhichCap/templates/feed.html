@@ -11,8 +11,10 @@
                 <td ng-click="voteForSecond(which)"><img class="pics" src="{{which.pic2Url}}" /></td>
             </tr>
             <tr class="col-xs-8 text-center center-block">
-                <td class="text-center feedVote1"></td>
-                <td class="text-center feedVote2"></td>
+                <td class="text-center feedVote1" ng-show="which.clicked && which.vote1 > which.vote2">Currently Winning</td>
+                <td class="text-center feedVote1" ng-show="which.clicked && which.vote1 < which.vote2">Currently Losing</td>
+                <td class="text-center feedVote2" ng-show="which.clicked && which.vote1 < which.vote2">Currently Winning</td>
+                <td class="text-center feedVote2" ng-show="which.clicked && which.vote1 > which.vote2">Currently Losing</td>
             </tr>
         </table>
     </div>
