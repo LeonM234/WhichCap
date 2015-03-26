@@ -26,6 +26,26 @@
 
         voteForSecond: function (which) {
             $resource('api/' + which.id + '/voteforsecond').save(which.id);
+        },
+
+        feedVoteDisplay: function (which) {
+            // ugly - make modular
+            $('.feedVote1').empty();
+            $('.feedVote2').empty();
+            if (which.vote1 > which.vote2) {
+                $('.feedVote1').append("Currently Winning");
+                $('.feedVote2').append("Currently Losing");
+                console.log(this);
+            }
+            else if (which.vote1 < which.vote2) {
+                $('.feedVote1').append("Currently Losing");
+                $('.feedVote2').append("Currently Winning");
+            } 
+            else {
+                $('.feedVote1').append("Currently TIED!");
+                $('.feedVote2').append("Currently TIED!");
+            }
+
         }
     }
 })

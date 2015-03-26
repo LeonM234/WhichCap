@@ -8,7 +8,12 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
-    background-color: #CFD8DC;
+    background-image: url("crossword.png");
+}
+
+#registerLink, loginLink {
+    color: aliceblue;
+    font-size: 1.2em;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -25,8 +30,9 @@ body {
     font-size: 2em;
 }
 
-#navAddWhich, #navMyWhiches, #myWhichesH1 {
-    font-family: 'Inconsolata', cursive;
+#navAddWhich, #navMyWhiches {
+    font-family: 'Share', cursive;
+    font: bold;
     color: #CDDC39;
     font-size: 1.5em;
 }
@@ -36,6 +42,11 @@ body {
     font-family: 'Frijole', cursive;
     color: #03A9F4;
     font-size: 2em;
+}
+
+#myWhichesH1 {
+    font-family: 'Frijole', cursive;
+    color: #03A9F4;
 }
 
 #feedUnderline {
@@ -52,6 +63,7 @@ body {
 
 .pics {
     border: 5px groove #03A9F4;
+    border-radius: 10%;
 }
 
 .votecount {
@@ -60,13 +72,23 @@ body {
     font-size: 1.1em;
 }
 
+
 /* Resize pics depending on screen size*/
-@media only screen and (min-width: 390px) {
+@media only screen and (min-width: 300px) {
+        .pics {
+        max-width: 135px;
+        min-width: 130px;
+        max-height: 117px;
+        min-height: 112px;
+    }
+}
+
+@media only screen and (min-width: 408px) {
         .pics {
         max-width: 170px;
         min-width: 165px;
-        max-height: 117px;
-        min-height: 112px;
+        max-height: 90px;
+        min-height: 87px;
     }
 }
 
@@ -90,7 +112,7 @@ body {
 
 
 .whichFeedItems {
-    font-family: 'Inconsolata', cursive;
+    font-family: 'Indie Flower', cursive;
     color: #37474f;
     font-size: 1.2em;
 }
@@ -101,6 +123,13 @@ body {
 
 .table {
     margin-bottom: 50px;
+}
+
+/* ADD WHICHES */
+
+#addWhichH1 {
+    font-family: 'Frijole', cursive;
+    color: #03A9F4;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */

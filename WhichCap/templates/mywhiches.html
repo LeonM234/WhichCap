@@ -2,15 +2,15 @@
 <div ng-repeat="which in feeds | orderBy:'id':true">
     <table class="table table-condensed table-hover">
         <tr class="col-xs-12 text-center center-block feedTopRow">
-            <th colspan="2" class="text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;{{which.title}}&nbsp;</u>?</th>
+            <th colspan="2" class="text-center whichFeedWhiches">Which <u class="whichFeedItems">&nbsp;{{which.title}}&nbsp;</u>&nbsp;?</th>
         </tr>
         <tr class="col-xs-8 text-center center-block">
             <td><img class="pics" src="{{which.pic1Url}}" /></td>
             <td><img class="pics" src="{{which.pic2Url}}" /></td>
         </tr>
         <tr class="col-xs-8 text-center center-block">
-            <td class="text-center votecount">{{which.vote1}}</td>
-            <td class="text-center votecount">{{which.vote2}}</td>
+            <td class="text-center votecount1">{{which.vote1}}</td>
+            <td class="text-center votecount2">{{which.vote2}}</td>
         </tr>
     </table>
 </div>
