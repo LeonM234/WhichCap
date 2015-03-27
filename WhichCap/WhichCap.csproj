@@ -205,7 +205,6 @@
     <Content Include="Global.asax" />
     <Content Include="js\classie.js" />
     <Content Include="js\codrops-btns.js" />
-    <Content Include="js\codrops-delay.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js" />
