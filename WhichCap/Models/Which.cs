@@ -15,14 +15,11 @@ namespace WhichCap.Models
 
         public string ApplicationUserID { get; set; }
 
-        // UserID here?
-
         // Need MaxChar (or something) of 150, and min of...1?
         // Example max case:  Which... set of earings should I buy my wife?
         // Example min case: Which... T?  (compare two fonts)
         public string Title { get; set; }
 
-        // Not sure if any extra parameters required
         public string Pic1Url { get; set; }
 
         public string Pic2Url { get; set; }

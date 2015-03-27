@@ -2,8 +2,7 @@
     return {
         get: function () {
             return $resource('/api/feed').query();
-            // query(), because that is what you
-            // use if you want to return an array
+            // query() performs GET where isArray:true
         },
 
         getById: function () {
@@ -31,24 +30,5 @@
             which.vote2 += 1;
             which.clicked = true;
         }
-
-        //feedVoteDisplay: function (which) {
-        //    // ugly - make modular
-        //    $('.feedVote1').empty();
-        //    $('.feedVote2').empty();
-        //    if (which.vote1 > which.vote2) {
-        //        $('.feedVote1').append("Currently Winning");
-        //        $('.feedVote2').append("Currently Losing");
-        //    }
-        //    else if (which.vote1 < which.vote2) {
-        //        $('.feedVote1').append("Currently Losing");
-        //        $('.feedVote2').append("Currently Winning");
-        //    } 
-        //    else {
-        //        $('.feedVote1').append("Currently TIED!");
-        //        $('.feedVote2').append("Currently TIED!");
-        //    }
-
-        //}
     }
 })

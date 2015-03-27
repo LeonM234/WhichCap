@@ -22,8 +22,7 @@ namespace WhichCap.Controllers
             return _db.All();
         }
 
-        // GET: api/feed/profile
-        // OR (maybe) api/feed/{id}
+        // GET: api/feed/{id}
         [Route("api/feed/{id}")]
         public IEnumerable<Which> GetById()
         {
