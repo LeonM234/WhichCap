@@ -32,7 +32,7 @@ namespace WhichCap.Controllers
                 return _db.GetWhichesByUserId(userId);
             }
             return _db.All();
-            // Not sure all is necessary
+            // Not sure _db.All() is necessary
             // Only need to get by ID for profile section
         }
 
